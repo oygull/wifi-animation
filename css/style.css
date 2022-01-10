@@ -9,4 +9,125 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #5f5e5e;
+}
+.main-box{
+  position: relative;
+  width: 400px;
+  height: 400px;
+
+}
+.box1{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 0px 100px 0px 0px;
+  transform: rotate(-45deg);
+  bottom: 50%;
+  z-index: 20;
+  left: 15%;
+  outline: 18px solid #5f5e5e;
+}
+.box2{
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background-color: #fff;
+  border-radius: 0px 100px 0px 0px;
+  transform: rotate(-45deg);
+  outline: 18px solid #5f5e5e;
+  bottom: 50%;
+  left: 10%;
+  z-index: 18;
+  animation: wifiAnimation 4s ease infinite both;
+}
+.box3{
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  background-color: #fff;
+  border-radius: 0px 110px 0px 0px;
+  transform: rotate(-45deg);
+  bottom: 50%;
+  z-index: 16;
+  left: 5%;
+  outline: 18px solid #5f5e5e;
+  animation: wifiAnimation2 4s ease infinite both;
+}
+.box4{
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-color: #fff;
+  border-radius: 0px 130px 0px 0px;
+  transform: rotate(-45deg);
+  bottom: 50%;
+  z-index: 14;
+  animation: wifiAnimation3 4s ease infinite both;
+}
+@keyframes wifiAnimation{
+  0%{
+    background-color: #5f5e5e;
+  }
+  25%{
+    background-color: #afaeaec4;
+  }
+  50%{
+    background-color: #afaeae;
+  }
+  75%{
+    background-color: #afaeaec4;
+  }
+  100%{
+    background-color: #5f5e5e;
+  }
+}
+@keyframes wifiAnimation2{
+  0%{
+    background-color: #5f5e5e;
+  }
+  15%{
+    background-color: #5f5e5ee3;
+  }
+  25%{
+    background-color: #797777;
+  }
+  50%{
+    background-color: #afaeae;
+  }
+  75%{
+    background-color: #797777;
+  }
+  85%{
+    background-color: #5f5e5ee3;
+  }
+  100%{
+    background-color: #5f5e5e;
+  }
+}
+@keyframes wifiAnimation3{
+  0%{
+    background-color: #5f5e5e;
+  }
+  25%{
+    background-color: #5f5e5ecb;
+  }
+  35%{
+    background-color: #8581818a;
+  }
+  50%{
+    background-color: #afaeae;
+  }
+  60%{
+    background-color: #8581818a;
+  }
+  75%{
+    background-color: #5f5e5ecb;
+  }
+  100%{
+    background-color: #5f5e5e;
+  }
 }
